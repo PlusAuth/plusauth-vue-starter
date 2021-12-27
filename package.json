@@ -1,27 +1,26 @@
 {
-	"name": "plusauth-vue-starter",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"start": "vue-cli-service serve",
-		"build": "vue-cli-service build"
-	},
-	"dependencies": {
-		"bootstrap": "^4.5.0",
-		"core-js": "^3.6.5",
-		"oidc-client": "^1.10.1",
-		"vue": "^2.6.11",
-		"vue-router": "^3.2.0"
-	},
-	"devDependencies": {
-		"@vue/cli-plugin-babel": "~4.4.0",
-		"@vue/cli-plugin-router": "~4.4.0",
-		"@vue/cli-service": "~4.4.0",
-		"vue-template-compiler": "^2.6.11"
-	},
-	"browserslist": [
-		"> 1%",
-		"last 2 versions",
-		"not dead"
-	]
+  "name": "plusauth-vue-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@plusauth/plusauth-oidc-client-js": "^0.12.0",
+    "bootstrap": "^4.5.0",
+    "core-js": "^3.6.5",
+    "oidc-client": "^1.10.1",
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.15",
+    "@vue/compiler-sfc": "^3.2.26"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
