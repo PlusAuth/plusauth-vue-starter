@@ -16,7 +16,7 @@ Before running the project, you must first follow these steps:
 2. Navigate to `Clients` tab and create a client of type `Single Page Application`.
 3. Go to details page of the client that you've just created and set the following fields as:
 
-- Redirect Uris: http://localhost:8080/signin-callback.html, http://localhost:8080/silent-renew.html
+- Redirect Uris: http://localhost:8080/callback, http://localhost:8080/silent-renew.html
 - Post Logout Redirect Uris: http://localhost:8080/
 
 Finally write down your Client Id for server configuration
@@ -31,7 +31,7 @@ Finally start the server:
 
         npm start
 
-The example is hosted at http://localhost:3000/
+The example is hosted at http://localhost:8080/
 
 ## License
 
