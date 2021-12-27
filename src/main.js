@@ -6,7 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const app = createApp(App)
 app.use(router)
+
+// Make auth object global to access from anywhere
 app.config.globalProperties.$auth = auth
+
 auth
   .initialize()
   .then(() => {})

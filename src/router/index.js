@@ -13,12 +13,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/callback',
+    path: '/callback', // Authentication redirect uri
     name: 'AuthCallback',
     component: AuthCallback
   },
   {
-    path: '/silent-renew.html',
+    path: '/silent-renew.html', // Token silent renew uri
     name: 'SilentRenew',
     component: SilentRenew
   },
@@ -30,7 +30,7 @@ const routes = [
   },
   ,
   {
-    path: '/unauthorized',
+    path: '/unauthorized', // Redirect to page if user not authorized
     name: 'unauthorized',
     component: Unauthorized
   },
@@ -44,6 +44,8 @@ const router = VueRouter.createRouter({
   history: VueRouter.createWebHistory('/'),
   routes
 })
+
+// Check user if logged in for routes that requires auth
 router.beforeEach(async (to, from, next) => {
   const loggedIn = await auth.isLoggedIn(true)
   if (to.matched.some(record => record.meta.requiresAuth)) {
