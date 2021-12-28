@@ -13,25 +13,32 @@ This is a very simple Vue project demonstrating basic authentication flows such 
 Before running the project, you must first follow these steps:
 
 1. Create a PlusAuth account and a tenant at https://dashboard.plusauth.com
-2. Navigate to `Clients` tab and create a client of type `Single Page Application`.
+2. Navigate to [Clients](https://dashboard.plusauth.com/~clients) tab and create a client of type `Single Page Application`.
 3. Go to details page of the client that you've just created and set the following fields as:
 
 - Redirect Uris: http://localhost:8080/callback, http://localhost:8080/silent-renew.html
 - Post Logout Redirect Uris: http://localhost:8080/
 
-Finally write down your Client Id for server configuration
+Write down your Client Id, it will be required in application's configuration.
 
 ## Getting Started
 
-First we need to configure the server. Rename `.env.example` file as just`.env`.
+First we need to supply required configuration values for the application. Rename `.env.example` file as `.env`.
 
-Then configure the `.env` file using your Client Id and your PlusAuth tenant name.
+Then modify the values inside `.env` file using your Client ID and your PlusAuth tenant name.
 
-Finally start the server:
+Finally, start the application with:
 
-        npm start
+```shell
+npm start
+# or with yarn
+yarn start
+```
 
-The example is hosted at http://localhost:8080/
+The application is hosted at http://localhost:8080/
+
+> If you are serving your application in a different port from the default one which is `8080`, 
+> make sure you have updated your Client's configuration mentioned in the [Prerequisites](#prerequisites) section accordingly.
 
 ## License
 
