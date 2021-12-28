@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "@plusauth/plusauth-oidc-client-js": "^0.12.0",
-    "bootstrap": "^4.5.0",
-    "core-js": "^3.6.5",
+    "bootstrap": "^4.6.1",
     "vue": "^3.2.26",
     "vue-router": "^4.0.12"
   },
