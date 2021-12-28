@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/">Plusauth Starter</a>
+      <a class="navbar-brand" href="/">PlusAuth Starter</a>
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto"></ul>
         <template v-if="user">
@@ -23,7 +23,7 @@
 <script>
 export default {
   /* We can't extract user object from auth since header is rendered before
-    Router.beforeEach runs (which is where the auth check is done). 
+    Router.beforeEach runs (which is where the auth check is done).
     This way when auth.user is set, the view will react to it. */
   data() {
     return {
