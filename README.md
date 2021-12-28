@@ -1,6 +1,9 @@
 # PlusAuth Vue Starter Project
 
-This is a very simple Vue project demonstrating basic authentication flows such as register, login and logout. To keep things simple we bootstrapped the project with `vue-cli` and used `oidc-client` for authentication.
+This is a very simple Vue project demonstrating basic authentication flows such as register, login and logout.
+To keep things simple we bootstrapped the project with
+[vue-cli](https://cli.vuejs.org/) and used
+[@plusauth/plusauth-oidc-client-js](https://github.com/PlusAuth/plusauth-oidc-client-js) for authentication.
 
 ## Table of Contents
 
@@ -43,5 +46,3 @@ The application is hosted at http://localhost:8080/
 ## License
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
-
-This project was bootstrapped with [Vue CLI](https://cli.vuejs.org/).
