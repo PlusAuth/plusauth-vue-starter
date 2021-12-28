@@ -1,10 +1,10 @@
 import * as VueRouter from 'vue-router'
+import { Auth } from "./auth.js";
 import Home from './components/Home.vue'
 import Profile from './components/Profile.vue'
 import Unauthorized from './components/Unauthorized.vue'
 import AuthCallback from './components/AuthCallback.vue'
 import SilentRenew from './components/SilentRenew.vue'
-import auth from '../auth/index'
 
 const routes = [
   {
@@ -28,7 +28,6 @@ const routes = [
     meta: {requiresAuth: true},
     component: Profile
   },
-  ,
   {
     path: '/unauthorized', // Redirect to page if user not authorized
     name: 'unauthorized',
@@ -47,7 +46,7 @@ const Router = VueRouter.createRouter({
 
 // Check user if logged in for routes that requires auth
 Router.beforeEach(async (to, from, next) => {
-  const loggedIn = await auth.isLoggedIn(true)
+  const loggedIn = await Auth.isLoggedIn(true)
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!loggedIn) {
       return next({
