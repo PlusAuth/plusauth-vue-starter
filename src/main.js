@@ -1,16 +1,16 @@
 import { createApp } from 'vue'
+import { Router } from './router.js'
+import { Auth } from './auth.js'
 import App from './App.vue'
-import router from './router/index'
-import auth from './auth/index'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const app = createApp(App)
-app.use(router)
+app.use(Router)
 
 // Make auth object global to access from anywhere
-app.config.globalProperties.$auth = auth
+app.config.globalProperties.$auth = Auth
 
-auth
+Auth
   .initialize()
   .then(() => {})
   .catch(console.error)

@@ -1,9 +1,9 @@
 import * as VueRouter from 'vue-router'
-import Home from '../components/Home.vue'
-import Profile from '../components/Profile.vue'
-import Unauthorized from '../components/Unauthorized.vue'
-import AuthCallback from '../components/AuthCallback.vue'
-import SilentRenew from '../components/SilentRenew.vue'
+import Home from './components/Home.vue'
+import Profile from './components/Profile.vue'
+import Unauthorized from './components/Unauthorized.vue'
+import AuthCallback from './components/AuthCallback.vue'
+import SilentRenew from './components/SilentRenew.vue'
 import auth from '../auth/index'
 
 const routes = [
@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/profile',
     name: 'profile',
-    meta: { requiresAuth: true },
+    meta: {requiresAuth: true},
     component: Profile
   },
   ,
@@ -40,13 +40,13 @@ const routes = [
   }
 ]
 
-const router = VueRouter.createRouter({
+const Router = VueRouter.createRouter({
   history: VueRouter.createWebHistory('/'),
   routes
 })
 
 // Check user if logged in for routes that requires auth
-router.beforeEach(async (to, from, next) => {
+Router.beforeEach(async (to, from, next) => {
   const loggedIn = await auth.isLoggedIn(true)
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!loggedIn) {
@@ -58,4 +58,4 @@ router.beforeEach(async (to, from, next) => {
   return next()
 })
 
-export default router
+export { Router }
