@@ -38,7 +38,7 @@ yarn start
 The application is hosted at http://localhost:8080/
 
 > If you are serving your application in a different port from the default one which is `8080`, 
-> make sure you have updated your Client's configuration mentioned in the [Prerequisites](#prerequisites) section accordingly.
+> make sure you have updated your Client's configuration mentioned in the [Prerequisites](#prerequisites) section and [auth.js](src/auth.js) accordingly.
 
 ## License
 
