@@ -7,10 +7,10 @@
 <h1 align="center">PlusAuth Vue Starter Project</h1>
 
  <p align="center">
-    Simple Vue project demonstrates basic authentication flows with PlusAuth
+    Simple Vue.js project demonstrates basic authentication flows with PlusAuth
     <br />
     <br />
-    <a href="https://docs.plusauth.com/quickStart/spa/angular" target="_blank"><strong>Explore the PlusAuth Vue docs »</strong></a>
+    <a href="https://docs.plusauth.com/quickStart/spa/vue" target="_blank"><strong>Explore the PlusAuth Vue docs »</strong></a>
 </p>
 
 <details>
@@ -27,7 +27,7 @@
 
 ## About The Project
 
-It is a simple Vue project demonstrating basic authentication flows such as register, login, and logout.
+It is a simple Vue.js project demonstrating basic authentication flows such as register, login, and logout.
 To keep things simple, we bootstrapped the project with [vue-cli](https://cli.vuejs.org/) and used [@plusauth/plusauth-oidc-client-js](https://github.com/PlusAuth/plusauth-oidc-client-js) for authentication.
 
 ## Prerequisites
