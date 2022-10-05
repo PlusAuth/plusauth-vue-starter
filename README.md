@@ -28,7 +28,7 @@
 ## About The Project
 
 It is a simple Vue.js project demonstrating basic authentication flows such as register, login, and logout.
-To keep things simple, we bootstrapped the project with [vue-cli](https://cli.vuejs.org/) and used [@plusauth/plusauth-oidc-client-js](https://github.com/PlusAuth/plusauth-oidc-client-js) for authentication.
+To keep things simple, we bootstrapped the project with [create-vue](https://vuejs.org/guide/scaling-up/tooling.html#project-scaffolding) and used [@plusauth/plusauth-oidc-client-js](https://github.com/PlusAuth/plusauth-oidc-client-js) for authentication.
 
 ## Prerequisites
 

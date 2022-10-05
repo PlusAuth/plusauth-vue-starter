@@ -6,7 +6,7 @@ export default {
   name: 'SilentRenew',
   async mounted() {
     await new OIDCClient({
-      issuer: process.env.VUE_APP_OIDC_ISSUER
+      issuer: import.meta.env.VITE_APP_OIDC_ISSUER
     }).loginCallback()
   }
 }

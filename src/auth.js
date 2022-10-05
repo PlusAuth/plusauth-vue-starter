@@ -1,8 +1,8 @@
 import { OIDCClient } from '@plusauth/plusauth-oidc-client-js'
 
 const Auth = new OIDCClient({
-  issuer: process.env.VUE_APP_OIDC_ISSUER,
-  client_id: process.env.VUE_APP_CLIENT_ID,
+  issuer: import.meta.env.VITE_APP_OIDC_ISSUER,
+  client_id: import.meta.env.VITE_APP_CLIENT_ID,
   redirect_uri: 'http://localhost:8080/callback',
   response_mode: 'form_post',
   response_type: 'id_token token',
