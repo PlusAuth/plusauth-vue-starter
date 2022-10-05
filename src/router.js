@@ -18,7 +18,7 @@ const routes = [
     component: AuthCallback
   },
   {
-    path: '/silent-renew.html', // Token silent renew uri
+    path: '/silent-renew', // Token silent renew uri
     name: 'SilentRenew',
     component: SilentRenew
   },
